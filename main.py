@@ -14,6 +14,7 @@ def load_todos():
 
 def add_one_task(title):
     tasks.append(title)
+    save_todos()
     print(f"Tarea añadida: '{title}'")
 
 def print_list():
@@ -25,6 +26,7 @@ def print_list():
 
 def delete_task(number_to_delete):
     eliminada = tasks.pop(number_to_delete)
+    save_todos()
     print(f"Tarea eliminada: '{eliminada}'")
     
 
